@@ -1,0 +1,51 @@
+/* Farver
+    * Baggrund:      hvid
+    * Tekst:         #666666
+    * Overskrifter:  #333333
+    * Links:         #b63333
+    * 
+    * Knapper:       #b63333
+    * Knapper-hover: #537b8d
+    * 
+    * Highlight bg:  #537b8d
+
+ 
+
+/*  Default fonts, colors and styles
+	* --------------------------------------- */
+    @import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+    body {
+        font-family: sans-serif;
+        background-color: white;
+        margin: 0;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Oxygen', sans-serif;
+        color: #333333;
+    }
+
+    p {
+        color: #666666
+    }
+
+    a, a:visited {
+        color: #b63333;
+    }
+
+
+
+/*  "Forside"
+	* --------------------------------------- */
+    #frontpage {
+        padding: 8px;
+        margin: 0;
+        background: url(../img/mountain.jpg) center;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+
+
