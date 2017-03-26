@@ -1,13 +1,13 @@
 /* Farver
-    * Baggrund:      hvid
-    * Tekst:         #666666
-    * Overskrifter:  #333333
-    * Links:         #b63333
+    * Baggrund:      #ffffff    rgb(255, 255, 255)
+    * Tekst:         #666666    rgb(102, 102, 102)
+    * Overskrifter:  #333333    rgb(51, 51, 51)
+    * Links:         #b63333    rgb(182, 51, 51)
     * 
-    * Knapper:       #b63333
-    * Knapper-hover: #537b8d
+    * Knapper:       #b63333    rgb(182, 51, 51)
+    * Knapper-hover: #537b8d    rgb(83, 123, 141)
     * 
-    * Highlight bg:  #537b8d
+    * Highlight bg:  #537b8d    rgb(83, 123, 141)
 
  
 
@@ -52,7 +52,7 @@
 	* --------------------------------------- */
     div.center {margin:auto}
     p.center, a.center, h1.center, h2.center, h3.center {text-align:center}
-    .centerwidth {margin:auto;max-width:900px}
+    .centerwidth {margin:auto;max-width:1080px}
     .vertical-center {
         position: relative;
         top: 40%;
@@ -70,11 +70,33 @@
         height: 100vh;
         max-height: 1000px;
     }
+    #frontpage p {
+        background: rgba(255,255,255,.4);
+        padding: 50px;
+    }
 
 /*  Menu
 	* --------------------------------------- */
+    .menu-flex {
+        display: flex;
+        width: 100%;
+        min-height: 3em;
+    }
 
-
+    .menu-flex-link, .menu-flex-link:visited {
+        color: #333333;
+        background: #b63333;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 12px;;
+        width: 33%;
+        border: white 2px solid;
+    }
+    .menu-flex-link:hover {
+        background: #537b8d;
+        color: #000000;
+    }
 
 /*  Siden
 	* --------------------------------------- */
@@ -97,4 +119,15 @@
     .logo .text {
         font-family: 'Oxygen', sans-serif;
         font-size: 15px;
+    }
+
+    .disclaimer {
+        visibility: visible;
+        font-style: italic;
+        font-size: .5em;
+        display: inline-block;
+        margin-left:.4em 
+    }
+    .disclaimer::before {
+        clear: both;
     }
