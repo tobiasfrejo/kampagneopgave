@@ -88,17 +88,33 @@
 
     .menu-flex-link, .menu-flex-link:visited {
         color: #333333;
-        background: #b63333;
+        background: #dddddd;
         font-family: 'Oxygen', sans-serif;
         font-size: 1.2em;
         text-align: center;
         padding: 12px;;
         width: 33%;
-        border: white 2px solid;
+        margin-right: 4px; 
+        position: relative;
+    }
+    .menu-flex-link::after{
+        content : " ";
+        position: absolute;
+        bottom: 0;
+        height  :3px;
+        width   : 10%;  /* or 100px */
+        left: 45%;
+        background: #333333;
+        border-radius: 80px;
+        transition: all 1s;
     }
     .menu-flex-link:hover {
         background: #537b8d;
         color: #000000;
+    }
+    .menu-flex-link:hover::after{
+        width: 80%;
+        left: 10%;
     }
 
 /*  Siden
