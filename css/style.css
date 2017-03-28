@@ -15,6 +15,9 @@
 	* --------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
 
+    * {
+        transition: all .2s;
+    }
 
     html {
         overflow-y: scroll;
@@ -103,6 +106,35 @@
     .page {
         margin: 8px;
     }
+
+/*  Artikel
+	* --------------------------------------- */
+    .article {
+        max-width: 100%;
+        position: relative;
+    }
+
+    .article::after {
+        content : " ";
+        display: block;
+        height  :3px;
+        width   : 50%;  /* or 100px */
+        margin: auto;
+        border: 1px solid transparent;
+        background: #eeeeee;
+        border-radius: 80px;
+        transition: all .2s;
+    }
+    .article:hover::after {width: 80%}
+    .article-head img {
+        width: 100%
+    }
+    .article-image-text {
+        margin: 0;
+        font-size: .8em
+    }
+
+
 
 /*  Sidefod
 	* --------------------------------------- */
