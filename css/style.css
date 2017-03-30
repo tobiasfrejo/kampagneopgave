@@ -155,14 +155,16 @@
 	* --------------------------------------- */
     .article-body.numbered {
         counter-reset: paragraph;
-        padding-left: 20px;
+        padding-left: 35px;
     }
     .article-body.numbered > h2::before {
-        position: absolute;
-        margin-left: -20px;
-        color: #666;
         content: counter(paragraph) ".";
         counter-increment: paragraph;
+        position: absolute;
+        width: 30px;
+        text-align: right;
+        margin-left: -35px;
+        color: #666;
     }
 
 /*  Sidefod
