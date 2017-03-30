@@ -9,19 +9,14 @@
     * 
     * Highlight bg:  #537b8d    rgb(83, 123, 141)
 
- 
 
 /*  Default fonts, colors and styles
 	* --------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
 
-    * {
-        transition: all .2s;
-    }
+    * {transition: all .2s;}
 
-    html {
-        overflow-y: scroll;
-    }
+    html {overflow-y: scroll;}
 
     body {
         font-family: sans-serif;
@@ -39,7 +34,7 @@
     p {color: #666666}
     h2+p, h3+p {margin-top:.2em}
     h2, h3 {margin-bottom:.2em}
-    
+
     a, a:visited {
         color: #b63333;
         text-decoration: none;
@@ -64,9 +59,7 @@
 
 /*  Link menu
 	* --------------------------------------- */
-    .menu-link {
-        position: relative;
-    }
+    .menu-link {position: relative;}
     .menu-link-items {
         display: none;
         bottom: 1em;
@@ -76,14 +69,9 @@
         z-index: 1;
         padding: 2px;
     }
-    .menu-link:hover .menu-link-items {
-        display: inline-block;
-    }
-    .menu-link:hover > a {
-        color: #000000
-    }
+    .menu-link:hover .menu-link-items {display: inline-block;}
+    .menu-link:hover > a {color: #000000}
     .menu-link-items a {display: block}
-
 
 /*  "Forside"
 	* --------------------------------------- */
@@ -106,7 +94,6 @@
         width: 100%;
         min-height: 3em;
     }
-
     .menu-flex-link, .menu-flex-link:visited {
         color: #333333;
         background: #dddddd;
@@ -138,14 +125,9 @@
         left: 10%;
     }
 
-/*  Siden
+/*  Siden samt "artikler"/opslag
 	* --------------------------------------- */
-    .page {
-        margin: 8px;
-    }
-
-/*  Artikel
-	* --------------------------------------- */
+    .page {margin: 8px;}
     .article {
         max-width: 100%;
         position: relative;
@@ -163,9 +145,7 @@
         transition: all .2s;
     }
     .article:hover::after {width: 80%}
-    .article-head img {
-        width: 100%
-    }
+    .article-head img {width: 100%}
     .article-image-text {
         margin: 0;
         font-size: .8em
@@ -209,6 +189,4 @@
         display: inline-block;
         margin-left:.4em 
     }
-    .disclaimer::before {
-        clear: both;
-    }
+    .disclaimer::before {clear:both}
