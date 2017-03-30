@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css?ts=<?=filemtime('style.css')?>" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="frontpage">
@@ -13,7 +14,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus libero sed ipsum pretium egestas. Sed nec tellus id augue commodo congue. Nunc sagittis rhoncus mauris, vitae suscipit orci gravida vel. Maecenas vitae velit at enim egestas posuere et non justo. Duis blandit gravida neque. Aliquam vitae venenatis mauris, vel elementum lectus. Cras in euismod tellus, at maximus mauris. Proin eget egestas sapien. Donec rutrum velit at tortor placerat tincidunt. Sed nec odio a tellus rhoncus porttitor. Pellentesque ut nibh quis dolor mollis sollicitudin.</p>
             </div>
         </div>
-        <div class="page">
+        <div class="page" id="top">
             <div class="menu centerwidth">
                 <div class="menu-flex">
                     <a class="menu-flex-link" href="#problem">Problemet for dig</a>
@@ -104,6 +105,7 @@
 
             </div>
         </div>
+        <a href="#" id="back-to-top" title="Til toppen">&uarr;</a>
         <div id="footer">
             <div class="footercontent centerwidth">
                 <p>En kampagne<span class="disclaimer">lavet som skoleprojekt og<br>som skal forestille at være</span> af</p>
@@ -125,5 +127,28 @@
                 </a>
             </div>
         </div>
+        <script>
+            if ($('#back-to-top').length) {
+                var scrollTrigger = $(window).height(); // px
+                    backToTop = function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > scrollTrigger) {
+                            $('#back-to-top').addClass('show');
+                        } else {
+                            $('#back-to-top').removeClass('show');
+                        }
+                    };
+                backToTop();
+                $(window).on('scroll', function () {
+                    backToTop();
+                });
+                $('#back-to-top').on('click', function (e) {
+                    e.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 700);
+                });
+            }
+        </script>
     </body>
 </html>
