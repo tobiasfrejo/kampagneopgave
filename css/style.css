@@ -64,6 +64,29 @@
         transform: translateY(-50%);
     }
 
+/*  Link menu
+	* --------------------------------------- */
+    .menu-link {
+        position: relative;
+    }
+    .menu-link-items {
+        display: none;
+        bottom: 1em;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+        position: absolute;
+        z-index: 1;
+        padding: 2px;
+    }
+    .menu-link:hover .menu-link-items {
+        display: inline-block;
+    }
+    .menu-link:hover > a {
+        color: #000000
+    }
+    .menu-link-items a {display: block}
+
+
 /*  "Forside"
 	* --------------------------------------- */
     #frontpage {
